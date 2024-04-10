@@ -1,0 +1,14 @@
+<svg id="标签" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f8d74d"/>
+      <stop offset="1" stop-color="#f19e55"/>
+    </linearGradient>
+  </defs>
+  <g id="涨">
+    <g id="组_23844" data-name="组 23844">
+      <rect id="矩形_17802" data-name="矩形 17802" width="16" height="16" fill="#fff" opacity="0"/>
+      <path id="路径_13862" data-name="路径 13862" d="M-96.5-40.775l2.12.458-3.067-5.016-4.565,3.368,2.338.5-1.588,6.936-1.184-3.173h-3.336l-3.336,8.363h3.336l1.668-4.182,1.666,4.176v.005h3.125l0-.009h.171Z" transform="translate(109.745 45.334)" fill="url(#linear-gradient)"/>
+    </g>
+  </g>
+</svg>

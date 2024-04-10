@@ -1,0 +1,13 @@
+FROM node as builder
+WORKDIR /app
+COPY package.json .
+RUN yarn
+COPY . .
+RUN yarn -i
+RUN yarn build
+
+FROM nginx
+COPY --from=builder /app/dist/ /usr/share/nginx/html/
+COPY --from=builder /app/public/ /usr/share/nginx/html/public/
+COPY nginx_dev.conf /etc/nginx/nginx.conf
+EXPOSE 80

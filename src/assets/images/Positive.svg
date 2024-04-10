@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g id="正面" transform="translate(-2364 -1807)">
+    <g id="smile-happy-m" transform="translate(2364 1807)">
+      <path id="路径_13592" data-name="路径 13592" d="M10.944,15.58A3.2,3.2,0,0,1,8.127,13.9l-1.407.761a4.8,4.8,0,0,0,8.449,0L13.761,13.9A3.2,3.2,0,0,1,10.944,15.58Z" transform="translate(-2.944 -4.38)" fill="#29b569"/>
+      <path id="路径_13593" data-name="路径 13593" d="M8,9.5a1,1,0,1,1,1,1A1,1,0,0,1,8,9.5Z" transform="translate(-3.2 -3.3)" fill="#29b569"/>
+      <path id="路径_13594" data-name="路径 13594" d="M14.5,8.5a1,1,0,1,0,1,1A1,1,0,0,0,14.5,8.5Z" transform="translate(-4.3 -3.3)" fill="#29b569"/>
+      <path id="路径_13595" data-name="路径 13595" d="M10,2a8,8,0,1,0,8,8A8,8,0,0,0,10,2ZM3.6,10A6.4,6.4,0,1,1,10,16.4,6.4,6.4,0,0,1,3.6,10Z" transform="translate(-2 -2)" fill="#29b569" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>

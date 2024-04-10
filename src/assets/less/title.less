@@ -1,0 +1,65 @@
+/**
+使用data-tip来实现title的效果
+ */
+
+// 通过属性选择器获取到标签，加上相对定位
+[data-tip] {
+    position: relative;
+    display: inline-block;
+  }
+  // 统一设置伪类的样式
+  [data-tip]::before,
+  [data-tip]::after {
+    position: absolute;
+    visibility: visible;
+    opacity: 0;
+    z-index: 20200618;
+    pointer-events: none;
+    transition: .2s;
+  }
+  // 单独设置before， 设置小三角形
+  [data-tip]::before {
+    content: '';
+    // 通过border来设置三角形
+    border: 5px solid transparent;
+    // 通过这个来设置三角形的直角的方向
+    border-top-color: rgba(0,0,0,.6);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    bottom: 100%;
+    left: 50%;
+    margin-bottom: -5px;
+  }
+  
+  // 设置字体和背景
+  [data-tip]::after {
+    // 通过 attr来或者字体
+    content: attr(data-tip);
+    background: rgba(0,0,0,.7);
+    font: 12px Microsoft YaHei;
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 2px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, .3);
+    bottom: 100%;
+    width: 100%;
+    white-space: pre-wrap;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 5px;
+  }
+  // hover的时候显示
+  [data-tip]:hover::before,
+  [data-tip]:hover::after {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition-delay: .15s;
+    transition-delay: .15s;
+  }
+  
+  // 当data-tip 没有内容的时候隐藏
+  [data-tip=""]::before,
+  [data-tip=""]::after {
+    display: none !important;
+  }
+  
